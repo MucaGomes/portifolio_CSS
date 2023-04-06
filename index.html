@@ -1,9 +1,9 @@
-<!DOCTYPE html>   
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -34,15 +34,54 @@
             </nav>
           </div>
         </div>
-        <h1>Samuel Gomes</h1>
-        <h2>Desenvolvedor Mobile Junior</h2>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/samuel-gomes-santos/" target="_blank" rel="noopener noreferrer" >Linkedn</a>
-          <a href="https://github.com/MucaGomes" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
+
+          <div class="left-right-items">
+           <div class="left-item">
+
+            <h1>Samuel Gomes</h1>
+            <h2>Desenvolvedor Mobile Junior</h2>
+          
+              <div class="social-media">
+                <a
+                  href="https://www.linkedin.com/in/samuel-gomes-santos/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Linkedn
+                  </a>
+                <a href="https://github.com/MucaGomes" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </div> 
+
+          </div>
+          <div class="right-item">
+            <section class="image">
+              <img src="./img/background-perfil-portifolio.png" alt="perfil">
+            </section>
+          </div>
+          </div>
     </header>
     <main class="container">
+      <div class="about-container">
+        <h1>Sobre</h1>
+        <div class="about-text">
+          <p>
+            Sou um Desenvolvedor Mobile Junior , tenho experiência como técnico
+            em informática, sou uma pessoa que ama trabalhar em equipe e gosto
+            de resolver problemas. Busco uma oportunidade que me propõe unir
+            minhas habilidades e que eu possa colocar em prática o que venho
+            estudando e desenvolvendo, tanto na área pessoal como na
+            profissional.
+          </p>
+        </div>
+      </div>
+
+      <div class="title-portifolio">
+        <h1>Portifólio</h1>
+      </div>
+
       <div class="card-container">
         <div class="card primeiro-card">
           <div class="card-wrapper">
@@ -51,22 +90,25 @@
           </div>
         </div>
         <div class="card-text">
-          Aplicação com objetivo de informar como esta o clima em qualquer lugar especificado pelo usuario , 
-          utilizando como API a https://openweathermap.org e obtendo os dados no aplicativo atráves da biblioteca Retrofit, Projeto feito em Kotlin para dispositivos android.
+          Aplicação com objetivo de informar como está o clima em qualquer lugar
+          especificado pelo usuário, utilizando como API:
+          https://openweathermap.org e obtendo os dados no aplicativo através da
+          biblioteca Retrofit.
         </div>
       </div>
       <div class="card-container">
-        <div class="card segundo-card" >
+        <div class="card segundo-card">
           <div class="card-wrapper">
             <h2>POKEDÉX</h2>
             <p>vem me ver!</p>
           </div>
         </div>
         <div class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          eligendi assumenda, fugiat sequi rerum quod aut dolore incidunt natus
-          molestiae maxime suscipit id velit aspernatur, tempore temporibus
-          recusandae. Eveniet, veritatis.
+          Aplicativo para aprofundar conhecimento em arquitetura MVVM e
+          requisicões de Api's , Pokedex feita com informações fornecidas pela
+          api pública: https://pokeapi.co/ e transformando os dados recebidos em
+          objetos e dados para utilizar com Kotlin, aplicativo completo feito
+          utilizando Kotlin, Retrofit, Hilt e Google Firebase.
         </div>
       </div>
       <div class="card-container">
@@ -76,13 +118,9 @@
             <p>Projeto em construção...</p>
           </div>
         </div>
-        <div class="card-text">
-          
-        </div>
+        <div class="card-text"></div>
       </div>
     </main>
-    <footer class="footer">
-      Feito por Samuel Gomes dos Santos
-    </footer>
+    <footer class="footer">Feito por Samuel Gomes dos Santos</footer>
   </body>
 </html>
