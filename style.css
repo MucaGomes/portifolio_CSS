@@ -339,3 +339,52 @@ a:hover {
   justify-content: center;
   color: #ffffff;
 }
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  section.image img {
+    margin-left: 50px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section.image {
+    display: none;
+    visibility: hidden;
+  }
+
+  .header-container {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .left-item {
+    padding: 50px;
+  }
+
+  .primeiro-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .segundo-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .terceiro-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card-container h2 {
+    font-size: 2rem;
+  }
+
+  .card-text {
+    font-size: 8px;
+  }
+}
