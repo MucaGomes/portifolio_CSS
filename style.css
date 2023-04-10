@@ -259,6 +259,10 @@ a:hover {
   transition: 0.5s ease-in-out;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .primeiro-card {
   background-image: url(./img/projeto-1-clima-tact.png);
 }
@@ -294,6 +298,13 @@ a:hover {
   transition: 0.5s ease-in-out;
 }
 
+
+
+.card:hover > .card-wrapper a {
+  position: relative;
+  background-color: transparent;
+}
+
 .card-wrapper h2 {
   font-size: 40px;
   text-transform: uppercase;
@@ -322,7 +333,7 @@ a:hover {
   opacity: 1;
 }
 
-.card:hover > .card-wrapper p {
+.card:hover > .card-wrapper p{
   opacity: 1;
   visibility: visible;
   font-size: 14px;
@@ -331,7 +342,7 @@ a:hover {
 /* FOOTER */
 
 .footer {
-  width: 100%;
+  width: 100vw;
   height: 100px;
   background-color: #34353a;
   display: flex;
@@ -360,12 +371,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 450px) {
-  
-    .left-item {
-      width: 100vw;
-      margin-left: 20px;
-  }
+@media only screen and (max-width: 600px) {
 
   .primeiro-card {
     width: 150px;
@@ -389,4 +395,43 @@ a:hover {
   .card-text {
     font-size: 10px;
   }
+
+  .card:hover > .card-wrapper::before {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer {
+    font-size: 10px;
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .about-text p {
+    width: 300px;
+    text-align: center;
+  }
+ 
+  .card-text {
+    width: 160px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-right-items h1 {
+    width: 80vw;
+  }
+
+  .social-media {
+    display: block;
+  }
+
+  .footer {
+    width: 100vw;
+  }
+  
+
 }
