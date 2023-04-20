@@ -204,25 +204,90 @@ a:hover {
 
 /* Sobre*/
 .about-container {
+  width: 80vw;
   color: #34353a;
+}
+
+.bio-text-pic {
+  display: grid;
+  grid-template-columns: 1fr 450px;
 }
 
 .about-container h1 {
-  display: flex;
-  justify-content: center;
+  color: #34353a;
+  font-size: 40px;
+  margin-bottom: -50px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
-.about-container p {
-  margin: 3rem 3rem;
-  color: rgb(109, 109, 109);
+.about-text {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-/* Cards de projetos*/
 
-.title-portifolio {
+.about-text p {
+  margin-left: 100px;
+  color: rgb(109, 109, 109);
+  font-size: 20px;
+}
+
+.pic-bio {
+  display: block;
+  margin: auto;
+  max-width: 400px;
+}
+
+.photo-bio {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.photo-bio img {
+  display: block;
+  width: 120%;
+}
+
+
+/* Skills */
+
+.skills-container h1 {
   color: #34353a;
+  font-size: 40px;
+  margin-bottom: -50px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.skills {
   display: flex;
   justify-content: center;
+  margin-top: 80px;
+}
+
+.icons {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.icons img {
+  width: 5vw;
+}
+
+
+/* Cards de projetos*/
+
+.portifolio h1 {
+  color: #34353a;
+  display: flex;
+  font-size: 40px;
+  margin-left: 100px;
+  margin-top: 100px;
 }
 
 .container {
@@ -230,28 +295,28 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   margin: 3rem 0;
 }
 
 .card-container {
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
   align-items: center;
+  grid-template-columns: 1fr 850px;
   width: 90%;
+  margin: auto;
 }
 
 .card {
   width: 300px;
   height: 300px;
   border-radius: 20%;
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #8ea7e9;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0, 5);
   color: #1e1e2a;
@@ -272,7 +337,7 @@ a:hover {
 }
 
 .card-text {
-  width: 40%;
+  width: 50vh;
   letter-spacing: 1px;
   color: rgb(109, 109, 109);
 }
@@ -297,8 +362,6 @@ a:hover {
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
-
-
 
 .card:hover > .card-wrapper a {
   position: relative;
@@ -333,7 +396,7 @@ a:hover {
   opacity: 1;
 }
 
-.card:hover > .card-wrapper p{
+.card:hover > .card-wrapper p {
   opacity: 1;
   visibility: visible;
   font-size: 14px;
@@ -372,7 +435,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-
   .primeiro-card {
     width: 150px;
     height: 150px;
@@ -408,12 +470,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 450px) {
-
   .about-text p {
     width: 300px;
     text-align: center;
   }
- 
+
   .card-text {
     width: 160px;
     margin-top: 40px;
@@ -432,6 +493,4 @@ a:hover {
   .footer {
     width: 100vw;
   }
-  
-
 }
