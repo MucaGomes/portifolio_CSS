@@ -497,8 +497,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 900px) {
-
-  
   section.image {
     display: none;
     visibility: hidden;
@@ -647,16 +645,29 @@ a:hover {
     width: 100vw;
   }
 
+  .about-container {
+    margin: auto;
+  }
+
   .about-text p {
     width: 300px;
     text-align: center;
   }
 
+  .skills-container {
+    margin: auto;
+  }
+
   .card-text {
-    width: 160px;
+    width: 150px;
     margin-top: 40px;
-    justify-content: center;
-    align-items: center;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .skills-projects {
+    display: none;
+    margin-left: 100px;
   }
 
   .left-right-items h1 {
@@ -723,7 +734,7 @@ a:hover {
     display: block;
   }
 
-  body{
+  body {
     width: fit-content;
   }
   .footer {
